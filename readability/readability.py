@@ -1,10 +1,10 @@
-from .text import Analyzer
-from .scorers import ARI, ColemanLiau, DaleChall, Flesch, \
+from text import Analyzer
+from scorers import ARI, ColemanLiau, DaleChall, Flesch, \
     FleschKincaid, GunningFog, LinsearWrite, Smog, Spache
 import warnings
 
 class Readability:
-    def __init__(self, text, min_words=100):
+    def __init__(self, text, min_words=25):
         self._analyzer = Analyzer()
         self._statistics = self._analyzer.analyze(text)
         self._min_words = min_words

@@ -1,5 +1,5 @@
 import math
-from readability.exceptions import ReadabilityException
+from exceptions import ReadabilityException
 
 
 class Result:
